@@ -88,3 +88,6 @@ ro.face.sense_service.camera_id=5
 
 # Enable Vulkan for HWUI
 ro.hwui.use_vulkan=true
+
+# Logs 
+persist.log.tag.ACDB-LOADER=S
