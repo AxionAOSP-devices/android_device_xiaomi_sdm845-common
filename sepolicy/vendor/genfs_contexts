@@ -1,5 +1,5 @@
-genfscon proc /sys/kernel/sched_autogroup_enabled     u:object_r:proc_sched:s0
-genfscon proc /sys/kernel/sched_boost                 u:object_r:proc_sched:s0
+genfscon proc /sys/vm/dirty_writeback_centisecs     u:object_r:proc_dirty:s0
+genfscon proc /sys/vm/vfs_cache_pressure            u:object_r:proc_drop_caches:s0
 genfscon proc /tp_fw_version       u:object_r:proc_tp:s0
 genfscon proc /tp_lockdown_info    u:object_r:proc_tp:s0
 
@@ -23,3 +23,6 @@ genfscon sysfs /devices/platform/soc/soc:qcom,kgsl-hyp/subsys3/restart_level   u
 
 genfscon sysfs /devices/platform/vendor/vendor:extcon_usb1/extcon/extcon3/cable.0/     u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/vendor/vendor:extcon_usb1/extcon/extcon3/cable.1/     u:object_r:sysfs_extcon:s0
+
+genfscon sysfs /sys/class/kgsl/kgsl-3d0/gpu_available_frequencies                   u:object_r:sysfs_gpu:s0
+genfscon sysfs /sys/class/kgsl/kgsl-3d0/min_clock_mhz                   u:object_r:sysfs_gpu:s0
